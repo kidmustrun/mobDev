@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/mobdev.iml" filepath="$PROJECT_DIR$/mobdev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobDev2021.iml" filepath="$PROJECT_DIR$/.idea/modules/mobDev2021.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mobDev2021.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mobDev2021.app.iml" />
     </modules>
   </component>
 </project>
