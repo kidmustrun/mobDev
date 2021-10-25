@@ -3,18 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_back.xml" value="0.14270833333333333" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_heart.xml" value="0.14270833333333333" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.1265625" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_second.xml" value="0.1598731884057971" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/layout/test_layout.xml" value="0.264" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/ic_like.xml" value="0.14635416666666667" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/ic_search.xml" value="0.14635416666666667" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/search.xml" value="0.2703125" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/content_main.xml" value="0.2" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_first.xml" value="0.2" />
+        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/first_num.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/operation.xml" value="0.48059701492537316" />
+        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/result.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/second_num.xml" value="0.1793478260869565" />
       </map>
     </option>
   </component>

@@ -1,15 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="notifications">Notifications</string>
-    <string name="replays">117 REPLAYS</string>
-<string name="account">Account</string>
+    <string name="go">Вперед</string>
+    <string name="back">Назад</string>
+    <string name="number_1">Введите первое число</string>
+    <string name="number_2">Введите второе число</string>
+    <string name="operation">Введите математическую операцию</string>
+    <string name="res">Результат</string>
+    <string name="b1">1</string>
+    <string name="b2">2</string>
+    <string name="b3">3</string>
+    <string name="b4">4</string>
 </resources>
