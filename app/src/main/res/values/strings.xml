@@ -1,13 +1,11 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="go">Вперед</string>
-    <string name="back">Назад</string>
-    <string name="number_1">Введите первое число</string>
-    <string name="number_2">Введите второе число</string>
-    <string name="operation">Введите математическую операцию</string>
-    <string name="res">Результат</string>
-    <string name="b1">1</string>
-    <string name="b2">2</string>
-    <string name="b3">3</string>
-    <string name="b4">4</string>
+    <string name="app_name">MyApplication</string>
+    <string name="title">Личности</string>
+    <string name="name">Имя</string>
+    <string name="dates">Даты жизни</string>
+    <string name="text">
+        Текст о личности
+    </string>
+    <string name="sex">Женщина</string>
+    <string name="menu_account">Account</string>
 </resources>

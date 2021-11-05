@@ -2,72 +2,31 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import androidx.fragment.app.Fragment
+import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.databinding.ActivityMainBinding
 
-interface ActivityCollback{
-    fun showNextFragment(x: Int)
-    fun showBackFragment(x: Int)
-    fun Exit()
-}
-
-class MainActivity : AppCompatActivity(), ActivityCollback{
+class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private var buttonList: MutableList<Button> = mutableListOf()
-    private var fragmentList: List<Fragment> = listOf(FirstNum(), SecondNum(), Operation(), Result())
-
+    private val verticalLinearLayoutManager: LinearLayoutManager =
+        LinearLayoutManager(this, RecyclerView.VERTICAL, false)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
-
-        buttonList.add(0, binding.button1)
-        buttonList.add(1, binding.button2)
-        buttonList.add(2, binding.button3)
-        buttonList.add(3, binding.button4)
-
-        ClickListener()
+        setContentView(binding.root)
+        binding.recyclerView.layoutManager = verticalLinearLayoutManager
+        binding.recyclerView.adapter =
+            PersonAdapter(PersonList.createCollectionItems(), ::showCardMessage, ::showLikeMessage)
     }
 
-    private fun ClickListener(){
-        supportFragmentManager.beginTransaction().replace(R.id.fragments, fragmentList[0]).commit()
-
-        for (i in fragmentList.indices){
-            buttonList[i].setOnClickListener {
-                supportFragmentManager.beginTransaction().replace(R.id.fragments, fragmentList[i]).commit()
-            }
-            if ( i > 0 ) buttonList[i].setEnabled(false)
-        }
+    private fun showLikeMessage(person: Person) {
+        val toast = Toast.makeText(applicationContext, "Нажат лайк:  " + person.name, Toast.LENGTH_SHORT)
+        toast.show()
     }
 
-    fun but(x: Int){
-        for (i in fragmentList.indices){
-            if ( i == x ) buttonList[i].setEnabled(true)
-        }
+    private fun showCardMessage(person: Person) {
+        val toast = Toast.makeText(applicationContext, "Нажата карточка:  " + person.name, Toast.LENGTH_SHORT)
+        toast.show()
     }
-
-    fun butdestroy(x: Int){
-        for (i in fragmentList.indices){
-            if ( i == x ) buttonList[i].setEnabled(false)
-        }
-    }
-
-    override fun showNextFragment(x: Int){
-        supportFragmentManager.beginTransaction().replace(R.id.fragments, fragmentList[x + 1]).commit()
-        but(x + 1)
-
-    }
-
-    override fun showBackFragment(x: Int) {
-        supportFragmentManager.beginTransaction().replace(R.id.fragments, fragmentList[x - 1]).commit()
-        butdestroy(x)
-    }
-    override fun Exit() {
-        finishAffinity()
-        System.exit(0);
-    }
-
 }
