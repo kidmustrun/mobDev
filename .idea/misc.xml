@@ -3,16 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_like.xml" value="0.4" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_like_pressed.xml" value="0.14635416666666667" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_white.xml" value="0.14635416666666667" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/layout/item.xml" value="0.536" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/first_num.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/operation.xml" value="0.48059701492537316" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/result.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/second_num.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/plus_icon.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.10869565217391304" />
+        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/layout/content_main.xml" value="0.10869565217391304" />
+        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/layout/dialog_fragment_add_node.xml" value="0.10869565217391304" />
+        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_first.xml" value="0.10869565217391304" />
+        <entry key="..\:/Users/kidmu/AndroidStudioProjects/MyApplication/app/src/main/res/layout/nodes_list_item.xml" value="0.10869565217391304" />
       </map>
     </option>
   </component>

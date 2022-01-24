@@ -1,56 +1,48 @@
 package com.example.myapplication
 
-import android.os.AsyncTask
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.method.ScrollingMovementMethod
-import android.view.View
-import android.widget.Button
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import android.view.Menu
+import android.view.MenuItem
+import com.example.myapplication.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
-    private var btn: Button?=null ;
-    private var statusText: TextView ?=null;
-    private var stringBuilder:StringBuilder?=null
+
+    private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        btn= findViewById<Button>(R.id.btn_async);
-        statusText=findViewById<TextView>(R.id.statusText)
-        statusText?.movementMethod=ScrollingMovementMethod()
-        stringBuilder = StringBuilder("Вывод сообщений на экран\n")
-        statusText?.text = "${stringBuilder.toString()}"
-        btn?.setOnClickListener(View.OnClickListener {
-            var  task:MyAsyncTask = MyAsyncTask()
-            task.execute(10)
-        })
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+
+        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        appBarConfiguration = AppBarConfiguration(navController.graph)
+        setupActionBarWithNavController(navController, appBarConfiguration)
+
     }
-    inner class MyAsyncTask : AsyncTask<Int, Int, Int>(){
-        override fun doInBackground(vararg params: Int?): Int {
-            val count:Int?=params[0]
-            var index=0
-            while (index< count!!){
-                publishProgress(index+1)
-                Thread.sleep(2000)
-                index++
-            }
-            return count;
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            else -> super.onOptionsItemSelected(item)
         }
-        override fun onProgressUpdate(vararg values: Int?) {
-            super.onProgressUpdate(*values)
-            if(values[0]!=null) {
-                stringBuilder?.append("Сообщение с номером ${values[0]}\n")
-                statusText?.text = stringBuilder.toString()
-            }
-        }
-        override fun onPreExecute() {
-            super.onPreExecute()
-            statusText?.text = "${stringBuilder.toString()}"
-        }
-        override fun onPostExecute(result: Int?) {
-            super.onPostExecute(result)
-            statusText?.text = "${stringBuilder.toString()}"
-        }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        return navController.navigateUp(appBarConfiguration)
+                || super.onSupportNavigateUp()
     }
 }

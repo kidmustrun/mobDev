@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name">MyApplication</string>
-    <string name="title">Личности</string>
-    <string name="name">Имя</string>
-    <string name="dates">Даты жизни</string>
-    <string name="text">
-        Текст о личности
-    </string>
-    <string name="sex">Женщина</string>
-    <string name="menu_account">Account</string>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Nodes</string>
+    <string name="second_fragment_label">Edit Node</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="add_node">Add node</string>
+    <string name="parents">Parents</string>
+    <string name="children">Children</string>
 </resources>
